@@ -9,6 +9,7 @@ import { ShopService } from './shop.service';
 })
 export class ShopComponent implements OnInit {
   products: IProduct[];
+  
 
   constructor(private shopService: ShopService) { }
 
