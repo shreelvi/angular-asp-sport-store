@@ -24,7 +24,7 @@ export class ShopService {
       params = params.append('typeId', typeId.toString());
     }
 
-    return this.http.get<IProduct>(this.baseUrl + 'product', {observe: 'response', params})
+    return this.http.get<IProduct>(this.baseUrl + 'products', {observe: 'response', params})
       .pipe(
         map(Response => {
           return Response.body;
@@ -33,10 +33,10 @@ export class ShopService {
   }
 
   getBrands(){
-    return this.http.get<IBrand[]>(this.baseUrl + 'product/brands')
+    return this.http.get<IBrand[]>(this.baseUrl + 'products/brands')
   }
 
   getTypes(){
-    return this.http.get<IType[]>(this.baseUrl + 'product/types')
+    return this.http.get<IType[]>(this.baseUrl + 'products/types')
   }
 }

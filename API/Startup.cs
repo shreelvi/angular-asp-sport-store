@@ -24,6 +24,7 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IProductRepository, ProductRepository>();
+            // Initialize in service container so that we can inject it wherever we need it
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
