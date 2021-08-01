@@ -1,16 +1,30 @@
-<div class="d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
-    <img src="/assets/images/logo.png" style="max-height: 70px;;" alt="Company logo">
-    <nav class="my-2 my-md-0 mr-md-3 text-uppercase" style="font-size: large;">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#">Shop</a>
-        <a class="p-2 text-dark" href="#">Contact</a>
-    </nav>
-    <div class="d-flex align-items-center">
+
+
+<div class="container" style=" max-width: inherit;">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" >
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Shop</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Blogs</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Cool Finds</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+      </form>
+
+      <div class="col-md-3 text-end">
         <a class="position-relative">
             <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
             <div class="cart-no">5</div>
         </a>
-        <a class="btn btn-outline-secondary mr-2" href="#">Login</a>
-        <a class="btn btn-outline-secondary mr-3" href="#">Register</a>
-    </div>
+        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button type="button" class="btn btn-primary">Sign-up</button>
+      </div>
+    </header>
 </div>
