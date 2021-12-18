@@ -23,6 +23,9 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Application/client ID: 82bed535-638d-4981-9e7d-438e8083b5ec
+            // Auth endpoint: https://login.microsoftonline.com/3bbeabc0-663f-4162-b313-0d43440b8897/oauth2/v2.0/authorize
+            
             services.AddScoped<IProductRepository, ProductRepository>();
             // Initialize in service container so that we can inject it wherever we need it
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
